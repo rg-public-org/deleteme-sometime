@@ -9,12 +9,12 @@ resource "kubernetes_pod" "test" {
       name  = "example"
 
       env {
-        name  = "environment"
+        name  = "environment-01"
         value = "test"
       }
 
       port {
-        container_port = 80
+        container_port = 8080
       }
     }
   }
