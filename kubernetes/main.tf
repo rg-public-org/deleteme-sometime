@@ -1,6 +1,7 @@
-resource "kubernetes_pod" "test" {
+#just a comment
+resource "kubernetes_pod" "test-0" {
   metadata {
-    name = "terraform-example"
+    name = "terraform-example-01"
   }
 
   spec {
@@ -9,12 +10,12 @@ resource "kubernetes_pod" "test" {
       name  = "example"
 
       env {
-        name  = "environment"
+        name  = "environment-01"
         value = "test"
       }
 
       port {
-        container_port = 80
+        container_port = 8080
       }
     }
   }
