@@ -1,3 +1,4 @@
+#just a comment
 resource "kubernetes_pod" "test-0" {
   metadata {
     name = "terraform-example-01"
